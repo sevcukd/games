@@ -1,0 +1,8 @@
+<h1>Profiles#new</h1>
+<p>Find me in app/views/profiles/new.html.erb</p>
+<%= form_for @profile, url: {action: "create"} do |f| %>
+nickname: <%= f.text_field :nickname %><br>
+age: <%= f.text_field :age %><br>
+avatar:  <%= f.file_field :avatar %><br>
+<%= f.submit %>
+<% end %>
